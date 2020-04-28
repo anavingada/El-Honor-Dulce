@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Registro */
+
+.maxWidth370 {
+    max-width: 370px !important;
+}
+
+h1 {
+	text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #432e2f;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.marginVert20 {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: #432e2f;
+}
+
+input {
+	color: #432e2f;
+	font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+#btnRegistro {
+	display: block;
+    background-color: #d15a43;
+    border: 1px solid #d15a43;
+}
+
+#btnRegistro:hover {
+	background-color: #e7cca6;
+}
+
+#linkLogin {
+	text-align: center;
+    cursor: pointer;
+    color: #644a4f;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+#linkLogin:hover {
+	color: #d15a43;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 25px !important;
+    }
+    label {
+        font-size: 16px;
+    }
+    input {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 246px) {
+    #btnRegistro {
+        word-break: break-all;
+    }
+}
+
+@media only screen and (max-width: 149px) {
+    h1 {
+        word-break: break-all;
+    }
+}

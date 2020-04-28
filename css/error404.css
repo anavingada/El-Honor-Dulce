@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Error 404 */
+
+.marginVert20 {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#banner {
+    width: 100%;
+    max-width: 1500px;
+}
+
+h1 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #432e2f;
+    font-weight: bold !important;
+}
+
+#mensaje {
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    color: #432e2f;
+}
+
+#btn {
+	display: block;
+    background-color: #d15a43;
+    border: 1px solid #d15a43;
+    max-width: 380px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#btn:hover {
+	background-color: #e7cca6;
+}
+
+@media only screen and (max-width: 575px) {
+	h1 {
+        font-size: 25px !important;
+    }
+    #mensaje {
+        font-size: 16px;
+    }
+    #btn {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Política de Privacidad */
+
+.marginVert20 {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.marginVert40 {
+	margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #d15a43;
+    font-weight: bold !important;
+}
+
+h2 {
+    text-align: left;
+    font-family: arial, sans-serif;
+    font-size: 25px !important;
+    color: #644a4f;
+    font-weight: bold !important;
+}
+
+h3 {
+    text-align: left;
+    font-family: arial, sans-serif;
+    font-size: 22px !important;
+    color: #644a4f;
+    font-weight: bold !important;
+}
+
+.text {
+    text-indent: 50px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #432e2f;
+}
+
+ul {
+    text-indent: 10px;
+    list-style: none;
+}
+
+.liBefore {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #432e2f;
+}
+
+.liBefore::before {
+    content: "\2022";
+    color: #d15a43;
+    margin-right: 15px;
+}
+
+.linkPage {
+    color: #d15a43 !important;
+    text-decoration: underline !important;
+}
+
+.linkPage:hover {
+    color: #644a4f !important;
+}
+
+@media only screen and (max-width: 575px) {
+	h1 {
+        font-size: 25px !important;
+    }
+    .text {
+        text-indent: 15px; 
+        font-size: 15px !important;
+    }
+    ul {
+        text-indent: 0px;
+        padding-left: 0px !important;
+    }
+    .liBefore {
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 199px) {
+    h1, h2, h3, .text, .linkPage, ul, .liBefore {  
+        word-break: break-all;
+        white-space: break-spaces;
+    }
+}

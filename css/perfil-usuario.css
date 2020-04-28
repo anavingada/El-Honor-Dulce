@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Perfil de usuario */
+
+.maxWidth1200 {
+    max-width: 1200px !important;
+}
+
+.marginVert20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.marginVert40 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.displayTitle {
+    display: flex;
+}
+
+#userIcon {
+    color: #644a4f;
+    text-align: right;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: arial, sans-serif;
+    color: #d15a43;
+    text-align: left;
+}
+
+.grupoDato {
+    display: grid;
+    margin-bottom: 20px;
+}
+
+label {
+    padding-left: 10px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #432e2f;
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #432e2f;
+    border-radius: 5px;
+    border: 2px solid #d15a43;
+    width: 100%;
+}
+
+#ojo {
+    position: absolute;
+    bottom: 22px;
+    right: 22px;
+    width: 24px;
+    height: 24px;
+}
+
+.displayButtons {
+    display: flex;
+}
+
+#actualizarPerfil, #cerrarSesion, #borrarPerfil {
+    background: #644a4f;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#actualizarPerfil:hover, #cerrarSesion:hover, #borrarPerfil:hover {
+    background: #d15a43;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 25px !important;
+    }
+    .displayButtons {
+        display: block;
+    }
+    #actualizarPerfil, #cerrarSesion {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .displayTitle {
+        display: block;
+    }
+    #userIcon {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    h1 {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 199px) {
+    h1, label, #actualizarPerfil, #cerrarSesion, #borrarPerfil {
+        word-break: break-all; 
+    }
+
+}

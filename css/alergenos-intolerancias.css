@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Alérgenos y intolerancias */
+
+.marginVert20 {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.marginVert40 {
+	margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.maxWidth1200 {
+    max-width: 1200px !important;
+}
+
+#banner {
+    width: 100%;
+    max-width: 1500px;
+}
+
+h1 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #d15a43;
+    font-weight: bold !important;
+}
+
+.info {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: #432e2f;
+}
+
+.AlergRow {
+    display: flex;
+}
+
+.icono {
+    width: 5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.identif {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: #432e2f;
+}
+
+#btn {
+	display: block;
+    background-color: #d15a43;
+    border: 1px solid #d15a43;
+    max-width: 380px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btn:hover {
+	background-color: #e7cca6;
+}
+
+@media only screen and (max-width: 924px) {
+    .identif {
+        display: block;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .icono {
+        width: 4rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    h1 {
+        font-size: 25px !important;
+    }
+    .info {
+        font-size: 15px;
+    }
+    .identif {
+        font-size: 15px;
+    }
+    #btn {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 419px) {
+    .AlergRow {
+        display: block;
+    }
+    .marginVertSMZero {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .marginVertSM20 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .maxWidth100perc {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .icono {
+        width: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 199px) {
+    h1 {
+        word-break: break-all;
+    }
+}
+
+@media only screen and (max-width: 149px) {
+    .info {
+        word-break: break-all;
+    }
+}

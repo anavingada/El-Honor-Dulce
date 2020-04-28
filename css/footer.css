@@ -1,0 +1,199 @@
+@charset "ISO-8859-1";
+@charset "UTF-8";
+
+/* El Horno Dulce - Pasteler�a y Reposter�a */
+/* Estilos - Footer */
+
+.margin_auto {
+	margin: auto; 
+}
+
+.footerContainer {
+    border-top: 2px solid #432e2f;
+    border-bottom: 2px solid #432e2f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+	display: flex !important;
+    text-align: center;
+    max-width: 1500px;
+}
+
+.title_footer {
+	font-family: arial;
+    font-size: 18px;
+    color: #80013A;
+	text-align: center;
+}
+
+.color_icons {
+	color: #432e2f;
+}
+
+.color_icons:hover {
+	text-decoration: underline;
+	color: #d15a43;
+}
+
+.footerStyle {
+	text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footerTitle {
+	font-family: arial;
+    font-size: 18px;
+    color: #d15a43;
+    text-align: center;
+}
+
+.footerStyle ul {
+	list-style: none;
+    margin-top: 1rem;
+	column-count: 2;
+	padding: 0;
+	text-align: left;
+}
+
+.footerStyle ul li {
+	line-height: 30px;
+	/*padding-left: 10px;*/
+}
+
+.footerStyle ul li a {
+	font-family: arial;
+    font-size: 15px;
+    color: #432e2f;
+    text-decoration: none;
+}
+
+.footerStyle ul li a:hover {
+	text-decoration: underline;
+	color: #d15a43;
+}
+
+.social_media {
+    text-align: center;
+}
+
+.social_media ul {
+	list-style: none;
+    display: inline-flex;
+    text-align: center;
+    margin: auto;
+}
+
+.social_media ul li {
+	text-align: center;
+    margin: auto;
+}
+
+.social_media ul li a {
+	color: #432e2f;
+}
+
+.social_media ul li a:hover {
+	text-decoration: underline;
+	color: #d15a43;
+}
+
+.contact{
+	text-align: center;
+    font-family: arial;
+    font-size: 15px;
+    color: #432e2f;
+    text-decoration: none;
+}
+
+.contact a {
+	color: #432e2f;
+    text-decoration: none;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+	color: #d15a43;
+}
+
+.container_disclaimer {
+	border-bottom: 2px solid #432e2f;
+    margin-bottom: 20px;
+}
+
+.disclaimer {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #432e2f;
+    text-align: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 991px) {
+	footer {
+		display: block !important; 
+	}
+	div[id='footerLeft'] ul {
+    	text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	div[id='footerLeft'] {
+		display: block; 
+	}
+}
+
+@media only screen and (max-width: 399px) {
+	div[id='footerLeft'] ul {
+		column-count: 1;
+		display: flex;
+    	flex-flow: column;
+	}
+	#alerg {
+		order: 1;
+	}
+	#faqs {
+		order: 2;
+	}
+	#prod {
+		order: 3; 
+	}
+	#map {
+		order: 4;
+	}
+	#cook {
+		order: 5;
+	}
+	#priv {
+		order: 6;
+	}
+}
+
+@media only screen and (max-width: 299px) {
+	.social_media {
+		max-width: 100% !important;
+	    flex: 100% !important;
+	    padding: 0 !important;
+	}
+	.contact {
+		word-break: break-word;
+	}
+}
+
+@media only screen and (max-width: 199px) {
+	.footerTitle {
+		word-break: break-all;
+	}
+	.footerStyle ul li a {
+		word-break: break-all;
+	}
+}

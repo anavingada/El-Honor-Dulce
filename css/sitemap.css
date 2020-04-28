@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Sitemap */
+
+.marginVert40 {
+	margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.marginVert20 {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.marginVert5 {
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #d15a43;
+    font-weight: bold !important;
+}
+
+h2 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 24px !important;
+    color: #432e2f;
+}
+
+.maxWidth1000 {
+    max-width: 1000px !important;
+}
+
+#listacompleta {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #432e2f;
+}
+
+a {
+    color: #432e2f !important;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #d15a43 !important;
+    text-decoration: underline;
+}
+
+#btn {
+	text-align: center;
+    cursor: pointer;
+    color: #644a4f;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#btn:hover {
+	color: #d15a43;
+}
+
+@media only screen and (max-width: 575px) {
+	h1 {
+        font-size: 25px !important;
+    }
+    h2 {
+        font-size: 20px !important;
+    }
+    #listacompleta {
+        font-size: 15px;
+    }
+    #btn {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    ul {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 159px) {
+    ul {
+        padding-left: 0px;
+    }
+}

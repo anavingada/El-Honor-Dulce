@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Contacto */
+
+.maxWidth1000 {
+    max-width: 1000px !important;
+}
+
+.marginVert40 {
+	margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.marginVert20 {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#banner {
+    width: 100%;
+    max-width: 1500px;
+}
+
+h1 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #d15a43;
+    font-weight: bold !important;
+}
+
+.texto {
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    color: #432e2f;
+
+}
+
+label {
+    padding-left: 10px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #432e2f;
+}
+
+#btnContacto {
+    margin-left: 10px;
+    background-color: #d15a43;
+    border: 1px solid #d15a43;
+}
+
+#btnContacto:hover {
+    background-color: #e7cca6;
+}
+
+h2 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 25px !important;
+    color: #644a4f;
+    font-weight: bold !important;  
+}
+
+.otrosContactos, .socialMedia {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #432e2f;
+}
+
+.otrosContactos a {
+    color: #432e2f;
+}
+
+.otrosContactos a:hover {
+    color: #d15a43;
+    text-decoration: underline;
+}
+
+.socialMedia:hover {
+    color: #d15a43;
+}
+
+.marginHoriz20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.showSpace {
+        display: block !important;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	.styleMD {
+        line-height: 50px;
+    }
+    #btnContacto {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+	h1 {
+        font-size: 25px !important;
+    }
+    .texto {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 219px) {
+	h1, h2, .otrosContactos {
+        word-break: break-all;
+    }
+}

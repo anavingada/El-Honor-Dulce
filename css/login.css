@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Login */
+
+.maxWidth370 {
+    max-width: 370px !important;
+}
+
+h1 {
+	text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #432e2f;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+#userIcon {
+	margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #d15a43;
+    color: #432e2f;
+    border-radius: 10px;
+    display: table;
+}
+
+.marginVert20 {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.marginVert10 {
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: #432e2f;
+}
+
+input {
+	color: #432e2f;
+	font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+#forgetPass {
+	text-align: right;
+    display: block;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #432e2f;
+    cursor: pointer;
+}
+
+#forgetPass:hover {
+	color: #d15a43;
+}
+
+#btnLogin {
+	display: block;
+    background-color: #d15a43;
+    border: 1px solid #d15a43;
+}
+
+#btnLogin:hover {
+	background-color: #e7cca6;
+}
+
+#linkRegistro {
+	text-align: center;
+    cursor: pointer;
+    color: #644a4f;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+#linkRegistro:hover {
+	color: #d15a43;
+}
+
+@media only screen and (max-width: 767px) {
+	#linkRegistro, #forgetPass {
+        text-decoration: underline;
+	}
+}

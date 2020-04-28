@@ -1,0 +1,187 @@
+@charset "ISO-8859-1";
+@charset "UTF-8";
+
+/* El Horno Dulce - Pasteler�a y Reposter�a */
+/* Estilos - Header */
+
+.maxWidth {
+	max-width: 1500px !important;
+}
+
+.paddingZero {
+	padding: 0 !important;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo img {
+	max-width: 300px;
+    width: 100%;
+}
+
+.backcolor_menu {
+	background-color: #E7CCA6 !important;
+}
+
+.text_menus {
+color: #432e2f !important;
+    font-family: Arial;
+   /*font-size: 18px;*/
+   font-size: 1.12rem;
+}
+.text_menus:hover {
+	text-decoration: underline;
+	color: #D15A43 !important;
+}
+
+.align_center {
+	text-align: center;
+}
+
+/*.space {
+	margin-left: 2%;
+	margin-right: 2%;
+}*/
+
+.menu_style {
+	text-align: center;
+    align-self: center;
+}
+
+.margin_center {
+	margin: auto;
+}
+
+.color_icons {
+	color: #60aed3;
+}
+
+.color_icons:hover {
+	text-decoration: underline;
+	color: #D15A43;
+}
+
+.btn.focus, .btn:focus {
+	box-shadow: none !important;
+}
+
+.user_style {
+    width: 30px;
+    height: 30px;
+    color: #432e2f;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    text-align: center;
+    align-self: center;
+    margin-bottom: auto;
+}
+
+.user_style i {
+	text-align: center;
+    margin: auto;
+}
+
+.dropdown-menu {
+	font-family: Arial, sans-serif !important;
+    font-size: 16px !important;
+    color: #d15a43 !important;
+    background-color: #644a4f !important;
+    text-align: center !important;
+}
+
+.dropdown-item {
+	color: #d15a43 !important;
+    font-weight: 600 !important;
+}
+
+.dropdown-item:hover {
+	background-color: #e7cca6 !important;
+}
+
+.navbar-toggler-icon {
+	margin: auto;
+}
+
+/* Responsive large Screen -xl */
+@media only screen and (min-width: 1400px) {
+	.content_padding {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.dropdown-menu {
+		left: -200% !important;
+	}
+}
+
+/* Responsive medium Screen -md */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.container-fluid {
+		padding: 0 !important; 
+	}
+	.dropdown-menu {
+		left: -350% !important;
+	}
+}
+
+/* Responsive small and medium Screens col- -sm -md */
+@media only screen and (min-width: 400px) and (max-width: 795px) {
+	.content_padding {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#navbarResponsive {
+		margin-bottom: 20px;
+	}
+	#listaMenu {
+		display: inline-block;
+	}	
+	.user_style {
+		display: contents;
+	}
+	.dropdown-menu {
+		min-width: unset !important;
+    	display: block !important;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.navbar-light .navbar-toggler {
+		border: none !important; 
+	}
+}
+
+@media only screen and (max-width: 399px) {
+	.logo {
+		flex: 70% !important;
+    	max-width: 70%;
+    	padding: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 299px) {
+	.logo {
+		flex: 80% !important;
+    	max-width: 80%;
+	}
+	.navbar-light .navbar-toggler {
+		max-width: 20% !important;
+    	padding: 0;
+	}
+	.text_menus {
+		font-size: 16px;
+	}
+	.dropdown-item {
+		word-break: break-all;
+		white-space: break-spaces !important;
+	}
+}
+
