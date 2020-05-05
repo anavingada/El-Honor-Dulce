@@ -60,12 +60,15 @@ a:hover {
     font-family: arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
+    border: none;
 }
 
 #btn:hover {
-	color: #d15a43;
+    color: #d15a43;
+    border: none;
 }
 
+/* Media Query para pantallas sm / igual o inferior a 575px */
 @media only screen and (max-width: 575px) {
 	h1 {
         font-size: 25px !important;
@@ -81,14 +84,23 @@ a:hover {
     }
 }
 
+/* Media Query para pantallas s / igual o inferior a 389px */
 @media only screen and (max-width: 389px) {
     ul {
         padding-left: 20px;
     }
 }
 
+/* Media Query para pantallas s / igual o inferior a 159px */
 @media only screen and (max-width: 159px) {
     ul {
         padding-left: 0px;
+    }
+}
+
+/* Media Query para pantallas s / igual o inferior a 139px */
+@media only screen and (max-width: 139px) {
+    h1, h2, li, #btn {
+        word-break: break-all;
     }
 }

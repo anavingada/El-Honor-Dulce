@@ -26,6 +26,17 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <script>
+		$(document).ready(function () {
+			$.get("header.html", function (response) {
+				$('#header').html(response);
+			});
+			$.get("footer.html", function (response) {
+				$('#footer').html(response);
+			});
+		});
+	</script>
+
     <!-- Carga de JQuery and Javascript -->
     <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -54,66 +65,12 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- External Javascript -->
-    <script type="text/javascript" src="javascript/login.js"></script>
 </head>
 
 <body style="overflow-x: hidden; position: relative;">
     <!--header-->
-    <div class="container-fluid">
-        <div class="row">
-            <header class="container-fluid paddingZero backcolor_menu">
-                <nav class="navbar navbar-expand-md navbar-light static-top col-12 maxWidth content_padding mx-auto">
-                    <div class="container-fluid justify-content-center">
-                        <!-- Logo -->
-                        <div class="logo col-7 col-sm-6 col-md-4 col-lg-3 col-xl-3 justify-content-center">
-                            <a href="homepage.html"><img src="images/logo_horizontal.png"
-                                    alt="El Horno Dulce - Panadería y Repostería" /></a>
-                        </div>
-                        <!-- Button responsive max-width 767px -->
-                        <button class="navbar-toggler " type="button" data-toggle="collapse"
-                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <!-- Menú -->
-                        <div class="collapse navbar-collapse col-12 col-md-8 col-lg-8 col-xl-6 justify-content-start"
-                            id="navbarResponsive">
-                            <ul id="listaMenu"
-                                class="navbar-nav justify-content-center justify-content-md-around col-12">
-                                <li class="nav-item menu_style">
-                                    <a class="text_menus nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
-                                </li>
-                                <li class="nav-item menu_style">
-                                    <a class="text_menus nav-link" href="productos.html">Productos</a>
-                                </li>
-                                <li class="nav-item menu_style">
-                                    <a class="text_menus nav-link" href="contacto.html">Contacto</a>
-                                </li>
-                                <li class="nav-item dropdown user_style">
-                                    <a class="text_menus nav-link dropdown-toggle" href="#" id="userLoggedOutMenu"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-user" title="User" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="userLoggedOutMenu">
-                                        <a class="dropdown-item" href="login.html">Login</a>
-                                        <a class="dropdown-item" href="registro.html">Registrarse</a>
-                                    </div>
-                                    <div class="dropdown-menu" aria-labelledby="userLoggedInMenu">
-                                        <a class="dropdown-item" href="perfil-usuario.html">Perfil</a>
-                                        <a class="dropdown-item" href="carrito.html">Carrito</a>
-                                        <a class="dropdown-item" href="historial-usuario.html">Historial</a>
-                                        <a class="dropdown-item" href="homepage.html">Cerrar Sesión</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-        </div>
-    </div>
-    <!--/header-->
+	<div id="header"></div>
+	<!--/header-->
 
     <div class="container-fluid">
         <div class="row">
@@ -132,16 +89,16 @@
                                     <div class="form-group text-left">
                                         <label for="userNombre">Nombre *</label>
                                         <input id="userNombre" type="text" name="userNombre" class="form-control"
-                                            placeholder="Inserta tu nombre" required="required">
-                                        <div class="validateNombre"></div>
+                                            placeholder="Inserta tu nombre (mínimo 2 letras)" pattern="^[a-zA-Z ñç]{2,}$" required="required">
+                                        <div id="validateNombre"></div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group text-left">
                                         <label for="userApellido">Apellido *</label>
                                         <input id="userApellido" type="text" name="userApellido" class="form-control"
-                                            placeholder="Inserta tu apellido" required="required">
-                                        <div class="validateApellido"></div>
+                                            placeholder="Inserta tu apellido (mínimo 2 letras)" pattern="^[a-zA-Z ñç]{2,}$" required="required">
+                                        <div id="validateApellido"></div>
                                     </div>
                                 </div>
                             </div>
@@ -150,16 +107,16 @@
                                     <div class="form-group text-left">
                                         <label for="userTelefono">Teléfono *</label>
                                         <input id="userTelefono" type="tel" name="userTelefono" class="form-control"
-                                            placeholder="Inserta tu teléfono" required="required" pattern="[0-9]{9}">
-                                        <div class="validateTelefono"></div>
+                                            placeholder="Inserta tu teléfono" required="required" pattern="^[69]{1}[0-9]{8}$">
+                                        <div id="validateTelefono"></div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group text-left">
                                         <label for="userEmail">Email *</label>
                                         <input id="userEmail" type="email" name="userEmail" class="form-control"
-                                            placeholder="Please enter your email" required="required">
-                                        <div class="validateEmail"></div>
+                                            placeholder="Inserta tu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="required">
+                                        <div id="validateEmail"></div>
                                     </div>
                                 </div>
                             </div>
@@ -168,9 +125,9 @@
                                     <div class="form-group text-left">
                                         <label for="form_message">Mensaje *</label>
                                         <textarea id="userMensaje" name="userMensaje" class="form-control"
-                                            placeholder="Escribe aquí tu mensaje" rows="4"
+                                            placeholder="Escribe aquí tu mensaje" rows="4" pattern="[\s\S].+" 
                                             required="required"></textarea>
-                                        <div class="validateMensaje"></div>
+                                        <div id="validateMensaje"></div>
                                     </div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-start">
@@ -195,10 +152,10 @@
                                 <span class="otrosContactos"><a href="faqs.html">FAQS</a></span>
                             </div>
                             <div class="col-12 col-md-6 col-lg-3 col-xl-3 styleMD my-auto text-center">
-                                <a target="_blank" href="home.html" aria-label="Facebook"><i
+                                <a target="_blank" href="https://www.facebook.com/" aria-label="Facebook"><i
                                         class="fab fa-facebook-f fa-2x marginHoriz20 socialMedia" title="Facebook"
                                         aria-hidden="true"></i></a>
-                                <a target="_blank" href="home.html" aria-label="Instagram"><i
+                                <a target="_blank" href="https://www.instagram.com/" aria-label="Instagram"><i
                                         class="fab fa-instagram fa-2x marginHoriz20 socialMedia" title="Instagram"
                                         aria-hidden="true"></i></a>
                             </div>
@@ -209,58 +166,12 @@
         </div>
     </div>
 
-    <!--footer-->
-    <div class="container-fluid">
-        <div class="row">
-
-            <div class="container-fluid footerContainer">
-                <footer class="container-fluid justify-content-center">
-                    <div id="footerLeft" class="footerStyle col-12 col-md-7 col-lg-5 col-xl-4 margin_auto">
-                        <p class="footerTitle">Enlaces útiles</p>
-                        <ul class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-12 margin_auto">
-                            <li id="alerg"><a href="alergenos-intolerancias.html">Alérgenos</a></li>
-                            <li id="prod"><a href="productos.html">Productos</a></li>
-                            <li id="priv"><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
-                            <li id="faqs"><a href="faqs.html">FAQS</a></li>
-                            <li id="map"><a href="sitemap.html">SiteMap</a></li>
-                            <li id="cook"><a href="politica-de-cookies.html">Política de Cookies</a></li>
-                        </ul>
-                    </div>
-                    <div id="footerMiddle"
-                        class="d-inline-flex footerStyle col-12 col-sm-6 col-md-5 col-lg-3 col-xl-3 margin_auto">
-                        <div class="social_media col-8 col-sm-10 margin_auto">
-                            <p class="footerTitle">Conéctate</p>
-                            <ul class="col-md-8 col-lg-7 col-xl-7">
-                                <li><a class="color_icons" target="_blank" href="facebook.com" aria-label="Facebook"><i
-                                            class="fab fa-facebook-f fa-2x" title="Facebook" aria-hidden="true"></i></a>
-                                </li>
-                                <li><a class="color_icons" target="_blank" href="instagram.com"
-                                        aria-label="Instagram"><i class="fab fa-instagram fa-2x" title="Instagram"
-                                            aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="footerRight"
-                        class="d-inline-flex footerStyle col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 margin_auto">
-                        <div class="col-12 margin_auto">
-                            <p class="footerTitle">Alguna cuestión?</p>
-                            <p class="contact"><a href="mailto:info@elhornodulce.es">info@elhornodulce.es</a></p>
-                            <p class="contact">+34 912 345 678</p>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-
-            <div class=" container-fluid container_disclaimer">
-                <div class="disclaimer col-12">
-                    <p class="copyright">Copyright © 2020 El Horno Dulce - Panadería y Repostería. Todos los derechos
-                        reservados.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--/footer-->
+    <!--Footer-->
+	<div id="footer"></div>
+    <!--/Footer-->
+    
+    <!-- External Javascript -->
+    <script type="text/javascript" src="javascript/contacto.js"></script>
 
 </body>
 

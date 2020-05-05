@@ -37,6 +37,7 @@ h1 {
 
 }
 
+/* Formulario */
 label {
     padding-left: 10px;
     font-family: arial, sans-serif;
@@ -53,6 +54,8 @@ label {
 #btnContacto:hover {
     background-color: #e7cca6;
 }
+
+/* Otros contactos */
 
 h2 {
     text-align: center;
@@ -86,6 +89,7 @@ h2 {
     margin-right: 20px;
 }
 
+/* Media Query para pantallas MD / entre 991px y 768px */
 @media only screen and (max-width: 991px) and (min-width: 768px) {
 	.showSpace {
         display: block !important;
@@ -93,6 +97,7 @@ h2 {
     }
 }
 
+/* Media Query para pantallas SM / igual o inferior a 767px */
 @media only screen and (max-width: 767px) {
 	.styleMD {
         line-height: 50px;
@@ -102,6 +107,7 @@ h2 {
     }
 }
 
+/* Media Query para pantallas S / igual o inferior a 575px */
 @media only screen and (max-width: 575px) {
 	h1 {
         font-size: 25px !important;
@@ -111,8 +117,16 @@ h2 {
     }
 }
 
+/* Media Query para pantallas S / igual o inferior a 219px */
 @media only screen and (max-width: 219px) {
 	h1, h2, .otrosContactos {
+        word-break: break-all;
+    }
+}
+
+/* Media Query para pantallas S / igual o inferior a 169px */
+@media only screen and (max-width: 169px) {
+	label, #btnContacto {
         word-break: break-all;
     }
 }

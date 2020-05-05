@@ -1,0 +1,80 @@
+[
+    {
+        "question" : "¿Qué es el Horno Dulce?", 
+        "answer" : "El Horno Dulce es una tienda de repostería y panadería ubicada en Madrid, España. Si quieres saber más sobre nosotros pincha <a href='sobre-nosotros.html'>aquí</a>."
+    },
+    {
+        "question" : "¿Como puedo empezar una encomienda?", 
+        "answer" : "Para empezar tu encomienda tan solo tienes que navegar por la <a href='productos.html'>página de productos</a> y seleccionar los que quieres. Estos mismos aparecerán en el carrito donde podrás finalizar tu compra. En este punto es importante tener en cuenta que tienes que estar <a href='registro.html'>registrado</a> en El Horno Dulce."
+    },
+    {
+        "question" : "Tengo que registrarme para hacer una encomienda?", 
+        "answer" : "Si quieres hacer tu encomienda online, tienes que <a href='registro.html'>registrarte</a> y/o hacer el <a href='login.html'>login</a> para poder hacer una encomienda. Es también posible efectuar reservas a través del teléfono o email. Sin embargo, recomendamos la encomienda a través de la página web, donde quedarán registrados todos sus pedidos."
+    },
+    {
+        "question" : "¿Hay un mínimo de encomienda por pedido?", 
+        "answer" : "Claro que no, aquí puedes encomiendar lo que necesites o lo que quieras."
+    },
+    {
+        "question" : "¿Los precios que veo incluyen IVA?", 
+        "answer" : "Sí. Desde el primer momento estarás viendo el precio que pagarás. Claro y sin sorpresas."
+    },
+    {
+        "question" : "¿Cuanto cuesta un pedido especial?",
+        "answer" : "Siendo un pedido especial, el precio no está establecido. El cliente debe hacer su pedido especial <a href='pedido-especial.html'>aquí</a>, especificando con el máximo de detalle sus necesidades. Una vez analizado el pedido, el equipo de El Horno Dulce llamará al cliente para definir detalles, entre ellos el precio."
+    },
+    {
+        "question" : "¿Hay gastos de envío?",
+        "answer" : "No. Los gastos de envío ya están incluidos en el precio de los productos."
+    },
+    {
+        "question" : "¿Cómo se procede al pagamiento?",
+        "answer" : "El pagamento se puede efectuar en el momento de la entrega de la encomienda o entonces por transferencia bancaria."
+    }, 
+    {
+        "question" : "¿Dónde realizáis entregas?",
+        "answer" : "De momento solo hacemos entregas en la Comunidad de Madrid. Por favor, disculpa si te encuentras en una localidad a la que no realizamos entregas o envíos, trabajaremos por continuar ampliando nuestras rutas para llegar a cada rincón con las máximas prestaciones."
+    },
+    {
+        "question" : "Con cuanto tiempo de antelación debo hacer mi pedido?",
+        "answer" : "Con cuanto más tiempo hagas tu pedido mejor. Sin embargo, normalmente necesitamos 3 días para gestionar de la mejor forma la confección y entrega del pedido."
+    },
+    {
+        "question" : "Aceptan pedidos urgentes?",
+        "answer" : "Depende de la encomienda. Lo que aconsejamos es que nos contactes por email, teléfono o por mensaje para que podamos analizar más rapidamente tu pedido. Puedes encontrar todos nuestros contactos <a href='contacto.html'>aquí</a>."
+    },
+    {
+        "question" : "¿Puedo seguir el estado de mi pedido?",
+        "answer" : "De momento no es posible. Sin embargo, si no eres contactado por nosotros, recibirás tu encomiendas en el día que indicaste."
+    },
+    {
+        "question" : "¿Qué pasa si no he recibido mi pedido?",
+        "answer" : "Bueno, esto para nosotros es impensable y embarazoso, pero de existir algún contratiempo con la recepción de tu pedido en el plazo de entrega establecido, no tengas dudas de que resolveremos inmediatamente el problema. Tan solo ponte en contacto con nosotros a través de las diversas vías de contacto que están a tu disposición, y haznos llegar cualquier tipo de problema para que podamos resolverlo lo antes posible."
+    },
+    {
+        "question" : "¿Puedo devolver un producto?",
+        "answer" : "Siendo comida, no se puede devolver el producto. Sin embargo, si hay algo que no corresponda, por favor contactanos por email o teléfono y trataremos de gestionar un nuevo pedido."
+    }, 
+    {
+        "question" : "¿Los productos contienen información sobre alérgenos e intolerancias?",
+        "answer" : "Si. Cada producto se hace acompañar de iconos de sus alérgenos correspondientes. Si tienes alguna intolerancias nos puedes contactar y hacer un pedido especial aquí."
+    }, 
+    {
+        "question" : "¿Sólo vendeis lo que está en la página de productos?",
+        "answer" : "No. Nosotros aceptamos, salvo en casos muy particulares, pedidos especiales. Esos pedidos especiales pueden ser, por ejemplo, un bizcocho sin leche para intolerantes a lactosa, o un bizcocho de boda, y mucho más. Haciendo un pedido especial, el cliente debe indicar al máximo detalle lo que necesita para que podamos gestionar su pedido."
+    }, 
+    {
+        "question" : "¿Son artesanos los productos?",
+        "answer" : "Todos nuestros productos son artesanos, dado que su totalidad son realizados en nuestro obrador por nuestros maestros pasteleros."
+    }, 
+    {
+        "question" : "¿Llegará en buen estado mi producto?",
+        "answer" : "Todos los productos que enviamos y que tenemos a la venta llegan en perfecto estado con toda su calidad y propiedades intactas, dado que son envasados para poder transportarse sin problemas y que así lleguen a su domicilio como si lo compraran en nuestra propia pastelería."
+    }, 
+    {
+        "question" : "¿Puedo encontrar los productos en algún establecimiento local?",
+        "answer" : "Desafortunadamente no disponemos de establecimientos que ofrezcan nuestros productos."
+    }
+
+
+]

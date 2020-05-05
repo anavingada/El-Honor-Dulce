@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Faqs */
+
+h1 {
+	text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #d15a43;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.faq {
+    border: 1px solid #d15a43 !important;
+    margin: 10px auto 10px auto;
+}
+
+.headFaq {
+    border-bottom: none !important;
+    background-color: unset !important;
+}
+
+.question {
+    font-family: arial, sans-serif;
+    font-size: 16px !important;
+    color: #644a4f !important;
+    font-weight: bold !important;
+}
+
+.answer {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #432e2f;
+    border-top: 1px solid #e7cca6 !important;
+}
+
+.answer a {
+    color: #d15a43;
+}
+
+.answer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #432e2f;
+}
+
+@media only screen and (min-width: 2000px) {
+	#accordion {
+        max-width: 1300px !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	h1 {
+        font-size: 25px !important;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.question {
+        text-align: left !important;
+    }
+}
+
+@media only screen and (max-width: 249px) {
+    #accordion{
+        padding: 0 !important;
+    }
+    .headFaq {
+        padding: 0 !important;   
+    }
+    .question, .answer {
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 179px) {
+    h1, .question, .answer {
+        word-break: break-all;
+    }
+}

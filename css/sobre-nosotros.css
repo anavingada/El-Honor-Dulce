@@ -27,7 +27,7 @@ img {
     display: block;
 }
 
-h1 {
+h1, h2 {
     font-family: arial, sans-serif;
     font-size: 30px !important;
     color: #d15a43;
@@ -39,6 +39,7 @@ h1 {
     color: #432e2f;
     line-height: 28px;
     display: block;
+    text-align: justify;
 }
 
 .texto a {
@@ -50,6 +51,7 @@ h1 {
     color: #d15a43;
 }
 
+/* Media Query para pantallas S y MD y LG / igual o inferior a 991px */
 @media only screen and (max-width: 991px) {
     .displayRow {
         display: block;
@@ -57,16 +59,13 @@ h1 {
     .displayRowRev {
         flex-direction: column;
     }
-
     .order1 {
         order: 1;
     }
-
     .order2 {
         order: 2;
     }
-
-    h1 {
+    h1, h2 {
         text-align: center;
         margin-top: 10px !important;
         margin-bottom: 10px !important; 
@@ -77,12 +76,14 @@ h1 {
     }
 }
 
+/* Media Query para pantallas SM y MD / igual o inferior a 767px */
 @media only screen and (max-width: 767px) {
-    h1 {
+    h1, h2 {
         font-size: 25px !important;
     }
 }
 
+/* Media Query para pantallas S / igual o inferior a 575px */
 @media only screen and (max-width: 575px) {
     .paddingSMZero {
         padding: 0 !important;
@@ -92,9 +93,9 @@ h1 {
     }
 }
 
-
+/* Media Query para pantallas S / igual o inferior a 169px */
 @media only screen and (max-width: 169px) {
-    h1, .texto {
+    h1, h2, .texto {
         word-break: break-all;
     }
 }

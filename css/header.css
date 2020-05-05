@@ -1,17 +1,22 @@
-@charset "ISO-8859-1";
 @charset "UTF-8";
 
-/* El Horno Dulce - Pasteler�a y Reposter�a */
+/* El Horno Dulce - Panadería y Repostería */
 /* Estilos - Header */
+
+/* navBar */
+.paddingZero {
+	padding: 0 !important;
+}
+
+.backcolor_menu {
+	background-color: #E7CCA6 !important;
+}
 
 .maxWidth {
 	max-width: 1500px !important;
 }
 
-.paddingZero {
-	padding: 0 !important;
-}
-
+/* Logo */
 .logo {
 	text-align: center;
 }
@@ -21,52 +26,24 @@
     width: 100%;
 }
 
-.backcolor_menu {
-	background-color: #E7CCA6 !important;
-}
-
-.text_menus {
-color: #432e2f !important;
-    font-family: Arial;
-   /*font-size: 18px;*/
-   font-size: 1.12rem;
-}
-.text_menus:hover {
-	text-decoration: underline;
-	color: #D15A43 !important;
-}
-
-.align_center {
-	text-align: center;
-}
-
-/*.space {
-	margin-left: 2%;
-	margin-right: 2%;
-}*/
-
+/*Menú */
 .menu_style {
 	text-align: center;
     align-self: center;
 }
 
-.margin_center {
-	margin: auto;
+.text_menus {
+	color: #432e2f !important;
+    font-family: Arial;
+   	font-size: 1.12rem;
 }
 
-.color_icons {
-	color: #60aed3;
-}
-
-.color_icons:hover {
+.text_menus:hover {
 	text-decoration: underline;
-	color: #D15A43;
+	color: #D15A43 !important;
 }
 
-.btn.focus, .btn:focus {
-	box-shadow: none !important;
-}
-
+/* Usuario y menús correspondientes (Log-in y Log-out)*/
 .user_style {
     width: 30px;
     height: 30px;
@@ -105,7 +82,7 @@ color: #432e2f !important;
 	margin: auto;
 }
 
-/* Responsive large Screen -xl */
+/* Media Query para pantallas XL / igual o superior a 1400px */
 @media only screen and (min-width: 1400px) {
 	.content_padding {
 		padding-left: 10%;
@@ -113,13 +90,15 @@ color: #432e2f !important;
 	}
 }
 
+
+/* Media Query para pantallas LG / entre 992px y 1199 */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.dropdown-menu {
 		left: -200% !important;
 	}
 }
 
-/* Responsive medium Screen -md */
+/* Media Query para pantallas MD / entre 768px y 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.container-fluid {
 		padding: 0 !important; 
@@ -129,7 +108,7 @@ color: #432e2f !important;
 	}
 }
 
-/* Responsive small and medium Screens col- -sm -md */
+/* Media Query para pantallas SM y MD / entre 400px y 795px */
 @media only screen and (min-width: 400px) and (max-width: 795px) {
 	.content_padding {
 		padding-left: 5%;
@@ -137,6 +116,7 @@ color: #432e2f !important;
 	}
 }
 
+/* Media Query para pantallas SM / igual o inferior a 767px */
 @media only screen and (max-width: 767px) {
 	#navbarResponsive {
 		margin-bottom: 20px;
@@ -153,12 +133,14 @@ color: #432e2f !important;
 	}
 }
 
+/* Media Query para pantallas S / igual o inferior a 575px */
 @media only screen and (max-width: 575px) {
 	.navbar-light .navbar-toggler {
 		border: none !important; 
 	}
 }
 
+/* Media Query para pantallas S / igual o inferior a 399px */
 @media only screen and (max-width: 399px) {
 	.logo {
 		flex: 70% !important;
@@ -167,6 +149,7 @@ color: #432e2f !important;
 	}
 }
 
+/* Media Query para pantallas S / igual o inferior a 299px */
 @media only screen and (max-width: 299px) {
 	.logo {
 		flex: 80% !important;

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Pedido Especial - El Horno Dulce</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/pedido-especial.css">
+
+
+    <!-- Bootstrap CSS & Javascript -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="fontawesome\css\all.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $.get("header.html", function (response) {
+                $('#header').html(response);
+            });
+            $.get("footer.html", function (response) {
+                $('#footer').html(response);
+            });
+        });
+    </script>
+
+    <!-- Carga de JQuery and Javascript -->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+
+<body style="overflow-x: hidden; position: relative;">
+    <!--header-->
+    <div id="header"></div>
+    <!--/header-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-12 col-md-10 col-lg-10 col-xl-8 mx-auto maxWidth1100 marginVert40 text-center">
+                    <h1 class="col-12 mx-auto">Pedido Especial</h1>
+                    <span class="texto">Por favor indica toda la información que nos puedas dar sobre tu pedido, incluso fecha y local de entrega. ¿Eres intolerante a lactosa? ¿Buscas un pastel personalizado de cumpleaños? Haz tu pedido especial! Vamos a analizarlo con atención y contactarte, así que dejanos tu teléfono y email.</span>
+                </div>
+                <form id="formPedidoEspecial" method="post" action="" role="form" novalidate
+                    class="col-12 col-md-10 col-lg-10 col-xl-8 mx-auto maxWidth1100">
+                    <div class="col-12">
+                        <h2>¿Cuál es tú pedido especial?</h2>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group text-left">
+                            <textarea id="userPedidoEspecial" name="userPedidoEspecial" class="form-control"
+                                placeholder="Describe aquí tu pedido. ¡Cuanto más detallado mejor!" rows="4" pattern="[\s\S].+" 
+                                required="required"></textarea>
+                            <div id="validatePedidoEspecial"></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h2>Otros detalles:</h2>
+                    </div>
+                    <div class="displayRow">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group text-left">
+                                <label for="userNombre">Nombre *</label>
+                                <input id="userNombre" type="text" name="userNombre" class="form-control"
+                                    placeholder="Inserta tu nombre" pattern="^[a-zA-Z ñç]{2,}$" required="required">
+                                <div id="validateNombre"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group text-left">
+                                <label for="userApellido">Apellido *</label>
+                                <input id="userApellido" type="text" name="userApellido" class="form-control"
+                                    placeholder="Inserta tu apellido" pattern="^[a-zA-Z ñç]{2,}$" required="required">
+                                <div id="validateApellido"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="displayRow">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group text-left">
+                                <label for="userTelefono">Teléfono *</label>
+                                <input id="userTelefono" type="tel" name="userTelefono" class="form-control"
+                                    placeholder="Inserta tu teléfono" pattern="^[69]{1}[0-9]{8}$" required="required">
+                                <div id="validateTelefono"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group text-left">
+                                <label for="userEmail">Email *</label>
+                                <input id="userEmail" type="email" name="userEmail" class="form-control"
+                                    placeholder="Please enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="required">
+                                <div id="validateEmail"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="displayRow">
+                        <div class="col-12 col-sm-8 col-md-5 col-lg-5 col-xl-4 mx-auto">
+                            <button id="btnPedido" type="submit" class="btn btn-primary col-12">Hacer pedido
+                                especial</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer"></div>
+    <!--/Footer-->
+
+    <!-- External Javascript -->
+    <script type="text/javascript" src="javascript/pedido-especial.js"></script>
+
+</body>
+
+</html>

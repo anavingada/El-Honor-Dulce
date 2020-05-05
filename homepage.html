@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/homepage.css">
 
 	<!-- Bootstrap CSS & Javascript -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -24,6 +25,18 @@
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+	<script>
+		$(document).ready(function () {
+			$.get("header.html", function (response) {
+				$('#header').html(response);
+			});
+			$.get("footer.html", function (response) {
+				$('#footer').html(response);
+			});
+		});
+	</script>
+
+
 	<!-- Carga de JQuery and Javascript -->
 	<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -32,6 +45,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"></script>
+
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -55,114 +69,131 @@
 
 <body style="overflow-x: hidden; position: relative;">
 	<!--header-->
-	<div class="container-fluid">
-		<div class="row">
-			<header class="container-fluid paddingZero backcolor_menu">
-				<nav class="navbar navbar-expand-md navbar-light static-top col-12 maxWidth content_padding mx-auto">
-					<div class="container-fluid justify-content-center">
-						<!-- Logo -->
-						<div class="logo col-7 col-sm-6 col-md-4 col-lg-3 col-xl-3 justify-content-center">
-							<a href="homepage.html"><img src="images/logo_horizontal.png"
-									alt="El Horno Dulce - Panadería y Repostería" /></a>
-						</div>
-						<!-- Button responsive max-width 767px -->
-						<button class="navbar-toggler " type="button" data-toggle="collapse"
-							data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<!-- Menú -->
-						<div class="collapse navbar-collapse col-12 col-md-8 col-lg-8 col-xl-6 justify-content-start"
-							id="navbarResponsive">
-							<ul id="listaMenu"
-								class="navbar-nav justify-content-center justify-content-md-around col-12">
-								<li class="nav-item menu_style">
-									<a class="text_menus nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
-								</li>
-								<li class="nav-item menu_style">
-									<a class="text_menus nav-link" href="productos.html">Productos</a>
-								</li>
-								<li class="nav-item menu_style">
-									<a class="text_menus nav-link" href="contacto.html">Contacto</a>
-								</li>
-								<li class="nav-item dropdown user_style">
-									<a class="text_menus nav-link dropdown-toggle" href="#" id="userLoggedOutMenu"
-										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i class="fas fa-user" title="User" aria-hidden="true"></i>
-									</a>
-									<div class="dropdown-menu" aria-labelledby="userLoggedOutMenu">
-										<a class="dropdown-item" href="login.html">Login</a>
-										<a class="dropdown-item" href="registro.html">Registrarse</a>
-									</div>
-									<div class="dropdown-menu" aria-labelledby="userLoggedInMenu">
-										<a class="dropdown-item" href="perfil-usuario.html">Perfil</a>
-										<a class="dropdown-item" href="carrito.html">Carrito</a>
-										<a class="dropdown-item" href="historial-usuario.html">Historial</a>
-										<a class="dropdown-item" href="homepage.html">Cerrar Sesión</a>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</header>
-		</div>
-	</div>
+	<div id="header"></div>
 	<!--/header-->
 
-	<p>homepage</p>
-
-	<!--Footer-->
 	<div class="container-fluid">
 		<div class="row">
-
-			<div class="container-fluid footerContainer">
-				<footer class="container-fluid justify-content-center">
-					<div id="footerLeft" class="footerStyle col-12 col-md-7 col-lg-5 col-xl-4 margin_auto">
-						<p class="footerTitle">Enlaces útiles</p>
-						<ul class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-12 margin_auto">
-							<li id="alerg"><a href="alergenos-intolerancias.html">Alérgenos</a></li>
-							<li id="prod"><a href="productos.html">Productos</a></li>
-							<li id="priv"><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
-							<li id="faqs"><a href="faqs.html">FAQS</a></li>
-							<li id="map"><a href="sitemap.html">SiteMap</a></li>
-							<li id="cook"><a href="politica-de-cookies.html">Política de Cookies</a></li>
-						</ul>
-					</div>
-					<div id="footerMiddle"
-						class="d-inline-flex footerStyle col-12 col-sm-6 col-md-5 col-lg-3 col-xl-3 margin_auto">
-						<div class="social_media col-8 col-sm-10 margin_auto">
-							<p class="footerTitle">Conéctate</p>
-							<ul class="col-md-8 col-lg-7 col-xl-7">
-								<li><a class="color_icons" target="_blank" href="facebook.com" aria-label="Facebook"><i
-											class="fab fa-facebook-f fa-2x" title="Facebook" aria-hidden="true"></i></a>
-								</li>
-								<li><a class="color_icons" target="_blank" href="instagram.com"
-										aria-label="Instagram"><i class="fab fa-instagram fa-2x" title="Instagram"
-											aria-hidden="true"></i></a></li>
-							</ul>
+			<div class="container-fluid">
+				<!--carrosel-->
+				<div class="marginVert20 mx-auto maxWidth1200">
+					<!--row-->
+					<div id="sliderCarousel" class="col-12 col-md-11 col-lg-12 col-xl-12 mx-auto carousel slide"
+						data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#sliderCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#sliderCarousel" data-slide-to="1"></li>
+							<li data-target="#sliderCarousel" data-slide-to="2"></li>
+							<li data-target="#sliderCarousel" data-slide-to="3"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="images/bienvenido.jpg" alt="Cookies del Horno Dulce">
+								<div id="slide1" class="carousel-caption d-none d-sm-block">
+									<h1>Bienvenido al Horno Dulce</h1>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<a href="pedido-especial.html">
+									<img class="d-block w-100" src="images/bizcocho_starwars.jpg"
+										alt="Bizcocho de Star Wars">
+									<div id="slide2" class="carousel-caption d-none d-sm-block">
+										<h3>¡Para los Jedis de <br /> una galáxia lejana, <br /> solo por pedido
+											especial!</h2>
+									</div>
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="productos.html#bolas-berlim">
+									<img class="d-block w-100" src="images/bolas_berlim.jpg"
+										alt="Nuevo dulce para probar: Bola de Berlim">
+									<div id="slide3" class="carousel-caption d-none d-sm-block">
+										<h3>Atrevete a probar estas Bolas de Berlim</h2>
+									</div>
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="contacto.html">
+									<img class="d-block w-100" src="images/curso_cocina.jpg"
+										alt="Curso de cocina de El Horno Dulce">
+									<div id="slide4" class="carousel-caption d-none d-sm-block">
+										<h3>¿Estás interesado en hacer un curso de repostería con nosotros? Contáctanos
+											</h2>
+									</div>
+								</a>
+							</div>
 						</div>
+						<a class="carousel-control-prev" href="#sliderCarousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#sliderCarousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
-					<div id="footerRight"
-						class="d-inline-flex footerStyle col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 margin_auto">
-						<div class="col-12 margin_auto">
-							<p class="footerTitle">Alguna cuestión?</p>
-							<p class="contact"><a href="mailto:info@elhornodulce.es">info@elhornodulce.es</a></p>
-							<p class="contact">+34 912 345 678</p>
-						</div>
-					</div>
-				</footer>
-			</div>
-
-			<div class=" container-fluid container_disclaimer">
-				<div class="disclaimer col-12">
-					<p class="copyright">Copyright © 2020 El Horno Dulce - Panadería y Repostería. Todos los derechos
-						reservados.</p>
 				</div>
+				<!--/carrosel-->
+				<!--sections-->
+				<div class="containerCategoria col-12 col-md-11 col-lg-12 maxWidth1500">
+					<!--row-->
+					<div class="categoria col-lg-4 col-md-6 col-sm-6 col-11">
+						<a href="productos.html#pasteles">
+							<img src="images/pasteles.jpg" alt="pasteles" />
+							<div class="nombreCategoria">
+								<h2>Pasteles</h2>
+							</div>
+						</a>
+					</div>
+					<div class="categoria col-lg-4 col-md-6 col-sm-6 col-11">
+						<a href="productos.html#tartas">
+							<img src="images/tartas.jpg" alt="tartas" />
+							<div class="nombreCategoria">
+								<h2>Tartas</h2>
+							</div>
+						</a>
+					</div>
+					<div class="categoria col-lg-4 col-md-6 col-sm-6 col-11">
+						<a href="productos.html#bizcochos">
+							<img src="images/bizcochos.jpg" alt="Bizcochos" />
+							<div class="nombreCategoria">
+								<h2>Bizcochos</h2>
+							</div>
+						</a>
+					</div>
+					<div class="categoria col-lg-4 col-md-6 col-sm-6 col-11">
+						<a href="productos.html#tradicionales">
+							<img src="images/tradicionales.jpg" alt="dulces tradicionales" />
+							<div class="nombreCategoria">
+								<h2>Tradicionales</h2>
+							</div>
+						</a>
+					</div>
+					<div class="categoria col-lg-4 col-md-6 col-sm-6 col-11">
+						<a href="productos.html#otros-productos">
+							<img src="images/otros_productos.jpg"
+								alt="otros productos como, por ejemplo, cookies o pan" />
+							<div class="nombreCategoria">
+								<h2>Otros</h2>
+							</div>
+						</a>
+					</div>
+					<div class="categoria col-lg-4 col-md-6 col-sm-6 col-11">
+						<a href="pedido-especial.html">
+							<img src="images/pedidos_especiales.jpg" alt="pedidos especiales" />
+							<div class="nombreCategoria">
+								<h2>Pedidos especiales</h2>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!--/sections-->
 			</div>
-
 		</div>
 	</div>
+
+	<!--Footer-->
+	<div id="footer"></div>
 	<!--/Footer-->
 
 </body>

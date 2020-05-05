@@ -26,6 +26,18 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <script>
+		$(document).ready(function () {
+			$.get("header.html", function (response) {
+				$('#header').html(response);
+			});
+			$.get("footer.html", function (response) {
+				$('#footer').html(response);
+			});
+		});
+	</script>
+
+
     <!-- Carga de JQuery and Javascript -->
     <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -61,60 +73,8 @@
 <body style="overflow-x: hidden; position: relative;">
 
     <!--header-->
-    <div class="container-fluid">
-        <div class="row">
-            <header class="container-fluid paddingZero backcolor_menu">
-                <nav class="navbar navbar-expand-md navbar-light static-top col-12 maxWidth content_padding mx-auto">
-                    <div class="container-fluid justify-content-center">
-                        <!-- Logo -->
-                        <div class="logo col-7 col-sm-6 col-md-4 col-lg-3 col-xl-3 justify-content-center">
-                            <a href="homepage.html"><img src="images/logo_horizontal.png"
-                                    alt="El Horno Dulce - Panadería y Repostería" /></a>
-                        </div>
-                        <!-- Button responsive max-width 767px -->
-                        <button class="navbar-toggler " type="button" data-toggle="collapse"
-                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <!-- Menú -->
-                        <div class="collapse navbar-collapse col-12 col-md-8 col-lg-8 col-xl-6 justify-content-start"
-                            id="navbarResponsive">
-                            <ul id="listaMenu"
-                                class="navbar-nav justify-content-center justify-content-md-around col-12">
-                                <li class="nav-item menu_style">
-                                    <a class="text_menus nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
-                                </li>
-                                <li class="nav-item menu_style">
-                                    <a class="text_menus nav-link" href="productos.html">Productos</a>
-                                </li>
-                                <li class="nav-item menu_style">
-                                    <a class="text_menus nav-link" href="contacto.html">Contacto</a>
-                                </li>
-                                <li class="nav-item dropdown user_style">
-                                    <a class="text_menus nav-link dropdown-toggle" href="#" id="userLoggedOutMenu"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-user" title="User" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="userLoggedOutMenu">
-                                        <a class="dropdown-item" href="login.html">Login</a>
-                                        <a class="dropdown-item" href="registro.html">Registrarse</a>
-                                    </div>
-                                    <div class="dropdown-menu" aria-labelledby="userLoggedInMenu">
-                                        <a class="dropdown-item" href="perfil-usuario.html">Perfil</a>
-                                        <a class="dropdown-item" href="carrito.html">Carrito</a>
-                                        <a class="dropdown-item" href="historial-usuario.html">Historial</a>
-                                        <a class="dropdown-item" href="homepage.html">Cerrar Sesión</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-        </div>
-    </div>
-    <!--/header-->
+	<div id="header"></div>
+	<!--/header-->
 
     <div class="container-fluid">
         <div class="row">
@@ -126,87 +86,37 @@
                     <ul id="listacompleta" class="maxWidth1000 mx-auto">
                         <li class="marginVert5"><a href="homepage.html">Homepage</a></li>
                         <ul>
-                            <li class="marginVert5"><a>Sobre Nosotros</a></li>
-                            <li class="marginVert5"><a>Productos</a></li>
-                            <li class="marginVert5"><a>Contacto</a></li>
-                            <li class="marginVert5"><a>Información sobre alérgenos e intolerancias</a></li>
-                            <li class="marginVert5"><a>FAQS</a></li>
-                            <li class="marginVert5"><a>Política de Cookies</a></li>
-                            <li class="marginVert5"><a>Política de Privacidad</a></li>
+                            <li class="marginVert5"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                            <li class="marginVert5"><a href="productos.html">Productos</a></li>
+                            <li class="marginVert5"><a href="contacto.html">Contacto</a></li>
+                            <li class="marginVert5"><a href="alergenos-intolerancias.html">Información sobre alérgenos e intolerancias</a></li>
+                            <li class="marginVert5"><a href="faqs.html">FAQS</a></li>
+                            <li class="marginVert5"><a href="politica-de-cookies.html">Política de Cookies</a></li>
+                            <li class="marginVert5"><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
                             <li class="marginVert5"><a href="sitemap.html">Sitemap</a></li>
-                            <li class="marginVert5"><a>Registro de Usuario</a></li>
+                            <li class="marginVert5"><a href="registro.html">Registro de Usuario</a></li>
                             <li class="marginVert5"><a href="login.html">Login de Usuario</a></li>
                             <ul>
-                                <li class="marginVert5"><a>Perfil del Usuario</a></li>
-                                <li class="marginVert5"><a>Carrito del Usuario</a></li>
-                                <li class="marginVert5"><a>Historial de compra del usuario</a></li>
+                                <li class="marginVert5"><a href="perfil-usuario.html">Perfil del Usuario</a></li>
+                                <li class="marginVert5"><a href="carrito.html">Carrito del Usuario</a></li>
+                                <li class="marginVert5"><a href="historial.html">Historial de compra del usuario</a></li>
                             </ul>
                         </ul>
-                        <li class="marginVert5"><a>Redes Sociales - Facebook</a></li>
-                        <li class="marginVert5"><a>Redes Sociales - Instagram</a></li>
+                        <li class="marginVert5"><a href="https://facebook.com/">Redes Sociales - Facebook</a></li>
+                        <li class="marginVert5"><a href="https://www.instagram.com/">Redes Sociales - Instagram</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-sm-10 mx-auto text-center">
                     <a id="btn" type="button" class="btn btn-default mx-auto col-12" href="contacto.html">¿No encuentras
-                        lo
-                        que buscas? Contáctanos.</a>
+                        lo que buscas? Contáctanos.</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--footer-->
-    <div class="container-fluid">
-        <div class="row">
-
-            <div class="container-fluid footerContainer">
-                <footer class="container-fluid justify-content-center">
-                    <div id="footerLeft" class="footerStyle col-12 col-md-7 col-lg-5 col-xl-4 margin_auto">
-                        <p class="footerTitle">Enlaces útiles</p>
-                        <ul class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-12 margin_auto">
-                            <li id="alerg"><a href="alergenos-intolerancias.html">Alérgenos</a></li>
-                            <li id="prod"><a href="productos.html">Productos</a></li>
-                            <li id="priv"><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
-                            <li id="faqs"><a href="faqs.html">FAQS</a></li>
-                            <li id="map"><a href="sitemap.html">SiteMap</a></li>
-                            <li id="cook"><a href="politica-de-cookies.html">Política de Cookies</a></li>
-                        </ul>
-                    </div>
-                    <div id="footerMiddle"
-                        class="d-inline-flex footerStyle col-12 col-sm-6 col-md-5 col-lg-3 col-xl-3 margin_auto">
-                        <div class="social_media col-8 col-sm-10 margin_auto">
-                            <p class="footerTitle">Conéctate</p>
-                            <ul class="col-md-8 col-lg-7 col-xl-7">
-                                <li><a class="color_icons" target="_blank" href="facebook.com" aria-label="Facebook"><i
-                                            class="fab fa-facebook-f fa-2x" title="Facebook" aria-hidden="true"></i></a>
-                                </li>
-                                <li><a class="color_icons" target="_blank" href="instagram.com"
-                                        aria-label="Instagram"><i class="fab fa-instagram fa-2x" title="Instagram"
-                                            aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="footerRight"
-                        class="d-inline-flex footerStyle col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 margin_auto">
-                        <div class="col-12 margin_auto">
-                            <p class="footerTitle">Alguna cuestión?</p>
-                            <p class="contact"><a href="mailto:info@elhornodulce.es">info@elhornodulce.es</a></p>
-                            <p class="contact">+34 912 345 678</p>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-
-            <div class=" container-fluid container_disclaimer">
-                <div class="disclaimer col-12">
-                    <p class="copyright">Copyright © 2020 El Horno Dulce - Panadería y Repostería. Todos los derechos
-                        reservados.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--/footer-->
+    <!--Footer-->
+	<div id="footer"></div>
+	<!--/Footer-->
 
 </body>
 

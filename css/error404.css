@@ -45,6 +45,7 @@ h1 {
 	background-color: #e7cca6;
 }
 
+/* Media Query para pantallas SM / igual o inferior a 575px */
 @media only screen and (max-width: 575px) {
 	h1 {
         font-size: 25px !important;
@@ -54,5 +55,15 @@ h1 {
     }
     #btn {
         font-size: 16px;
+    }
+    .paddingZero {
+        padding: 0 !important;
+    }
+}
+
+/* Media Query para pantallas S / igual o inferior a 139px */
+@media only screen and (max-width: 139px) {
+	h1, #mensaje, #btn {
+        word-break: break-all;
     }
 }

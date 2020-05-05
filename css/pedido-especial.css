@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Pedido Especial */
+
+.marginVert40 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h1 {
+	text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #d15a43;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.texto {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 16px !important;
+    color: #432e2f;
+}
+
+h2 {
+    font-family: arial, sans-serif;
+    font-size: 25px !important;
+    color: #644a4f;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.displayRow {
+    display: flex;
+}
+
+label {
+    font-family: arial, sans-serif;
+    font-size: 16px !important;
+    color: #432e2f;
+}
+
+input {
+    font-family: arial, sans-serif;
+    font-size: 16px !important;
+    color: #432e2f;
+}
+
+#btnPedido {
+    background-color: #d15a43;
+    border: 1px solid #d15a43;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btnPedido:hover {
+    background-color: #e7cca6;
+}
+
+/* Media Query para pantallas XXL / igual o superior a 1700px */
+@media only screen and (min-width: 1700px) {
+	.maxWidth1100 {
+        max-width: 1100px !important;
+	}
+}
+
+/* Media Query para pantallas SM / igual o inferior a 767px */
+@media only screen and (max-width: 767px) {
+	.displayRow {
+       display: block;
+    }
+    h1 {
+        font-size: 25px !important;
+    }
+    h2 {
+        font-size: 18px !important;
+    }
+}
+
+/* Media Query para pantallas S / igual o inferior a 299px */
+@media only screen and (max-width: 299px) {
+	form {
+       padding: 0 !important;
+	}
+}
+
+/* Media Query para pantallas S / igual o inferior a 154px */
+@media only screen and (max-width: 154px) {
+	h1, .texto {
+       word-break: break-all;
+	}
+}
+
+/* Media Query para pantallas S / igual o inferior a 144px */
+@media only screen and (max-width: 144px) {
+	#btnPedido {
+       word-break: break-all;
+	}
+}
+
+/* Media Query para pantallas S / igual o inferior a 119px */
+@media only screen and (max-width: 119px) {
+	h2, label, input {
+       word-break: break-all;
+	}
+}

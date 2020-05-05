@@ -31,11 +31,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.marginVert10 {
-	margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 label {
     font-family: arial, sans-serif;
     font-size: 18px;
@@ -46,6 +41,16 @@ input {
 	color: #432e2f;
 	font-family: arial, sans-serif;
     font-size: 16px;
+    position: relative;
+}
+
+#ojo {
+    width: 24px;
+    height: 24px;
+}
+
+#validatePass {
+    display: initial;
 }
 
 #forgetPass {
@@ -83,8 +88,38 @@ input {
 	color: #d15a43;
 }
 
+/* Media Query para pantallas SM y MD / igual o inferior a 767px */
 @media only screen and (max-width: 767px) {
 	#linkRegistro, #forgetPass {
         text-decoration: underline;
+	}
+}
+
+/* Media Query para pantallas S / igual o inferior a 195px */
+@media only screen and (max-width: 195px) {
+	#userIcon {
+        display: none;
+	}
+}
+
+/* Media Query para pantallas S / igual o inferior a 179px */
+@media only screen and (max-width: 179px) {
+	#btnLogin {
+        word-break: break-all;
+	}
+}
+
+
+/* Media Query para pantallas S / igual o inferior a 179px */
+@media only screen and (max-width: 171px) {
+	#ojo {
+        word-break: break-all;
+	}
+}
+
+/* Media Query para pantallas S / igual o inferior a 135px */
+@media only screen and (max-width: 135px) {
+	h1, label, #forgetPass, #linkRegistro {
+        word-break: break-all;
 	}
 }

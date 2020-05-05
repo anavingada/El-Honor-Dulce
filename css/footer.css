@@ -1,8 +1,8 @@
-@charset "ISO-8859-1";
 @charset "UTF-8";
 
-/* El Horno Dulce - Pasteler�a y Reposter�a */
+/* El Horno Dulce - Panadería y Repostería */
 /* Estilos - Footer */
+
 
 .margin_auto {
 	margin: auto; 
@@ -50,6 +50,7 @@ footer {
     text-align: center;
 }
 
+/* Footer left - Quick links */
 .footerStyle ul {
 	list-style: none;
     margin-top: 1rem;
@@ -60,7 +61,6 @@ footer {
 
 .footerStyle ul li {
 	line-height: 30px;
-	/*padding-left: 10px;*/
 }
 
 .footerStyle ul li a {
@@ -75,6 +75,7 @@ footer {
 	color: #d15a43;
 }
 
+/* Footer middle - redes sociales */
 .social_media {
     text-align: center;
 }
@@ -100,6 +101,7 @@ footer {
 	color: #d15a43;
 }
 
+/* Footer right - contactos*/
 .contact{
 	text-align: center;
     font-family: arial;
@@ -118,6 +120,7 @@ footer {
 	color: #d15a43;
 }
 
+/* Footer bottom - copyright */
 .container_disclaimer {
 	border-bottom: 2px solid #432e2f;
     margin-bottom: 20px;
@@ -137,23 +140,26 @@ footer {
     margin: auto;
 }
 
+/* Media Query para pantallas SM y MD / iguales o inferiores a 991px*/
 @media only screen and (max-width: 991px) {
 	footer {
 		display: block !important; 
 	}
-	div[id='footerLeft'] ul {
+	#footerLeft ul {
     	text-align: center;
 	}
 }
 
+/* Media Query para pantallas MD / entre 768px y 991px*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	div[id='footerLeft'] {
+	#footerLeft {
 		display: block; 
 	}
 }
 
+/* Media Query para pantallas S / igual o inferior a 399px */
 @media only screen and (max-width: 399px) {
-	div[id='footerLeft'] ul {
+	#footerLeft ul {
 		column-count: 1;
 		display: flex;
     	flex-flow: column;
@@ -178,6 +184,7 @@ footer {
 	}
 }
 
+/* Media Query para pantallas S / igual o inferior a 299px */
 @media only screen and (max-width: 299px) {
 	.social_media {
 		max-width: 100% !important;
@@ -189,6 +196,7 @@ footer {
 	}
 }
 
+/* Media Query para pantallas S / igual o inferior a 199px */
 @media only screen and (max-width: 199px) {
 	.footerTitle {
 		word-break: break-all;

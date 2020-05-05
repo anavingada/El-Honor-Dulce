@@ -17,11 +17,6 @@
     max-width: 1200px !important;
 }
 
-#banner {
-    width: 100%;
-    max-width: 1500px;
-}
-
 h1 {
     text-align: center;
     font-family: arial, sans-serif;
@@ -70,19 +65,21 @@ h1 {
 	background-color: #e7cca6;
 }
 
+/* Media query para pantallas lg / igual o inferior a 924px */
 @media only screen and (max-width: 924px) {
     .identif {
         display: block;
     }
-    
 }
 
+/* Media query para pantallas sm y md / igual o inferior a 767px */
 @media only screen and (max-width: 767px) {
     .icono {
         width: 4rem;
     }
 }
 
+/* Media query para pantallas sm / igual o inferior a 575px */
 @media only screen and (max-width: 575px) {
     h1 {
         font-size: 25px !important;
@@ -98,7 +95,7 @@ h1 {
     }
 }
 
-
+/* Media query para pantallas s / igual o inferior a 419px */
 @media only screen and (max-width: 419px) {
     .AlergRow {
         display: block;
@@ -123,12 +120,14 @@ h1 {
 
 }
 
+/* Media query para pantallas s / igual o inferior a 199px */
 @media only screen and (max-width: 199px) {
     h1 {
         word-break: break-all;
     }
 }
 
+/* Media query para pantallas s / igual o inferior a 149px */
 @media only screen and (max-width: 149px) {
     .info {
         word-break: break-all;

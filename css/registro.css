@@ -55,6 +55,7 @@ input {
 	color: #d15a43;
 }
 
+/* Media Query para pantallas SM / igual o inferior a 767px */
 @media only screen and (max-width: 767px) {
     h1 {
         font-size: 25px !important;
@@ -67,14 +68,37 @@ input {
     }
 }
 
+/* Media Query para pantallas S / igual o inferior a 299px */
+@media only screen and (max-width: 299px) {
+    .noPadding {
+        padding: 0 !important;
+    }
+}
+
+/* Media Query para pantallas S / igual o inferior a 246px */
 @media only screen and (max-width: 246px) {
     #btnRegistro {
         word-break: break-all;
     }
 }
 
+/* Media Query para pantallas S / igual o inferior a 155px */
+@media only screen and (max-width: 155px) {
+    #linkLogin {
+        word-break: break-all;
+    }
+}
+
+/* Media Query para pantallas S / igual o inferior a 149px */
 @media only screen and (max-width: 149px) {
-    h1 {
+    h1, label {
+        word-break: break-all;
+    }
+}
+
+/* Media Query para pantallas S / igual o inferior a 129px */
+@media only screen and (max-width: 129px) {
+    #validateNombre, #validateApellido, #validateTelefono, #validateEmail, #validatePassword {
         word-break: break-all;
     }
 }
