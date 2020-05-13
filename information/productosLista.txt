@@ -1,0 +1,183 @@
+{
+    "Producto":
+[
+    {
+        "ID" : "001",
+        "image" : "images/prod_001.jpg", 
+        "nameProd" : "Cookies con pepitas de chocolate",
+        "categoriaProd" : ["Todos", "Otros"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "5,50",
+        "unidades" : "10"
+    },
+    {
+        "ID" : "002",
+        "image" : "images/prod_002.jpg", 
+        "nameProd" : "Tarta de queso con frutos rojos",
+        "categoriaProd" : ["Todos", "Tartas"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "12",
+        "unidades" : "1"
+    },
+    {
+        "ID" : "003",
+        "image" : "images/prod_003.jpg", 
+        "nameProd" : "Crema Catalana",
+        "categoriaProd" : ["Todos", "Tradicionales"], 
+        "alergenosProd": [
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "4",
+        "unidades" : "1"
+    },
+    {
+        "ID" : "004",
+        "image" : "images/prod_004.jpg", 
+        "nameProd" : "Bolas de Berlim",
+        "categoriaProd" : ["Todos", "Otros"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "1",
+        "unidades" : "1"
+    },
+    {
+        "ID" : "005",
+        "image" : "images/prod_005.jpg", 
+        "nameProd" : "Churros con 0.50l de chocolate",
+        "categoriaProd" : ["Todos", "Otros"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "4,50",
+        "unidades" : "10"
+    },
+    {
+        "ID" : "006",
+        "image" : "images/prod_006.jpg", 
+        "nameProd" : "Pastelitos de  queso con miel y nueces",
+        "categoriaProd" : ["Todos", "Pasteles"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Frutos de cáscara", "imageAlerg":"images/frutos_cascara.png" }
+        ],
+        "price" : "5",
+        "unidades" : "10"
+    },
+    {
+        "ID" : "007",
+        "image" : "images/prod_007.jpg", 
+        "nameProd" : "Bizcocho de chocolate",
+        "categoriaProd" : ["Todos", "Bizcocho"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "5",
+        "unidades" : "10"
+    },
+    {
+        "ID" : "008",
+        "image" : "images/prod_008.jpg", 
+        "nameProd" : "Torrijas",
+        "categoriaProd" : ["Todos", "Tradicionales"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "5",
+        "unidades" : "8"
+    }, 
+    {
+        "ID" : "009",
+        "image" : "images/prod_009.jpg", 
+        "nameProd" : "Arroz con Leche",
+        "categoriaProd" : ["Todos", "Tradicionales"], 
+        "alergenosProd": [
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" }
+        ],
+        "price" : "4",
+        "unidades" : "1"
+    },
+    {
+        "ID" : "010",
+        "image" : "images/prod_010.jpg", 
+        "nameProd" : "Quesada",
+        "categoriaProd" : ["Todos", "Tradicionales"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "8",
+        "unidades" : "1"
+    },
+    {
+        "ID" : "011",
+        "image" : "images/prod_011.jpg", 
+        "nameProd" : "Tarta de yogur",
+        "categoriaProd" : ["Todos", "Tartas"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "6",
+        "unidades" : "1"
+    },
+    {
+        "ID" : "012",
+        "image" : "images/prod_012.jpg", 
+        "nameProd" : "Tarta de Oreo",
+        "categoriaProd" : ["Todos", "Tartas"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "8",
+        "unidades" : "1"
+    },
+    {
+        "ID" : "013",
+        "image" : "images/prod_013.jpg", 
+        "nameProd" : "Bizcocho de Canela",
+        "categoriaProd" : ["Todos", "Bizcocho"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "10",
+        "unidades" : "1"
+    },
+    {
+        "ID" : "014",
+        "image" : "images/prod_014.jpg", 
+        "nameProd" : "Pastelitos de nata y arándanos",
+        "categoriaProd" : ["Todos", "Pasteles"], 
+        "alergenosProd": [
+            { "nameAlerg":"Gluten", "imageAlerg":"images/gluten.png" },
+            { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
+            { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
+        ],
+        "price" : "5",
+        "unidades" : "10"
+    }
+]
+}
