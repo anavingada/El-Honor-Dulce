@@ -1,7 +1,7 @@
 # El-Honor-Dulce
 DAW Project for webpage "El Horno Dulce". 
 
-05/05/2020
+13/05/2020
 
 Versión con HTML, CSS, Bootstrap, Javascript, Jquery y Json. 
 
@@ -25,7 +25,7 @@ PÁGINAS CASI TERMINADAS / PENDIENTES DE BACK-END (Patri):
 - Registro --> falta saber dónde va la petición del formulario (action=""). Antes de hacer el registro, debe verificar si el email y password no existen. Si todo bien, se hace el registro y se redirecciona el usuario a la página de login. Si no está todo bien, se debe enseñar en pantalla el error de que el email ya está registrado.
 
 PÁGINAS QUE NO ESTÁN HECHAS: 
-- Productos --> voy a crear primera un listado y probar como enseñar en pantalla. Sin embargo, es necesario una función para mostrar en pantalla solo por categoria. 
+- Productos --> Similar a las FAQS, he creado un fichero Json para enseñar en pantalla todos los productos. Me falta terminar la distribuición por páginas. De la parte del servidor, es necesario mostrar los resultados de productos en función de la categoria seleccionada por el usuario. Eso depende de la información que envía el servidor desde la base de datos de productos.  
 - Carrito --> Tengo que recibir los datos de sesión del carrito y mostrarlos en pantalla. 
 - Historial --> lo mismo que el carrito
 - Pedidos de todos los clientes --> lo mismo que el carrito
@@ -36,13 +36,8 @@ PREGUNTAS Y PROBLEMAS:
 - Patri, estoy intentando abrir los proyectos de flask que tienes subido a github, pero no me deja. Incluso instalé pycharm, pero no tengo idea de como hacerlo. Me ayudas? :)
 - La páginas que están terminadas y o casi terminadas, ya las puedes subir a tu proyecto de back end y empezar a probar (ejemplo del login, etc). Cuando tengas esto subido a tu proyecto me lo pasas? Necesito también que me expliques como funciona el proyecto y como lo puedo ver en el chrome. He estado mirando un mónton de tutoriales y no consigo qu ¡e funcionen :/ 
 
-
-
-Gracias. Ana
-
 DETALLES:
 - Para conseguir utilizar el mismo fichero de "header" y "footer" en todas las otras oáginas de la web, utilicé Ajax. Si lo abres normalmente, estos no van a aparecer porque ajax solo funciona en servidor. Lo que hice fue utilizar la extensión de chrome llamada "Web Server For Chrome" con un link para el proyecto. Así, si abro los HTMLs ya todo funciona bien. Por ejemplo la URL sería parecida a http://110.0.0.1:8888/homepage.html Si tienes algún problema me dices. 
 
-- Estoy creando un listado de productos para despues hacer lo que hice con las FAQS. 
-
+Gracias. Ana
 
