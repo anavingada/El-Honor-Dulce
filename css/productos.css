@@ -82,6 +82,31 @@ img {
     color: #d15a43;
 }
 
+.pageCont {
+    display: block;
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+
+.pageButtons {
+    border: 1px solid #d15a43;
+    background-color: #d15a43;
+    padding: 10px;
+    border-radius: 3px;
+    color: #432e2f;
+}
+
+.pageButtons:hover {
+    background-color: #e7cca6;
+    color: #432e2f;
+}
+
+#pagination div span {
+    color: #432e2f;
+    font-family: arial, sans-serif;
+    font-size: 15px;
+}
+
 /* Media Query para pantallas iguales o superiores a 1600px */
 @media only screen and (min-width: 1600px) {
     .maxWidth1500 {
@@ -289,3 +314,12 @@ img {
         word-break: break-all;
     }
 }
+
+
+#pagination-demo{
+    display: inline-block;
+    margin-bottom: 1.75em;
+  }
+  #pagination-demo li{
+    display: inline-block;
+  }

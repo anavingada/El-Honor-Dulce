@@ -24,9 +24,6 @@
 	<!-- JQuery -->
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<!-- Pagination -->
-	<script src="https://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
-	<link rel="stylesheet" href="https://pagination.js.org/dist/2.1.4/pagination.css"/>
 
 	<script>
 		$(document).ready(function () {
@@ -112,12 +109,18 @@
 				</div>
 				<!-- Resultados de Productos de acuerdo con categoria -->
 
-					<div id="productosCont">
-						<div class="wrapper productosCont col-12 mx-auto maxWidth1500" >
-
+					<div id="productosCont" class="productosCont col-12 mx-auto maxWidth1500">
+						
+					</div>
+					<div id="pagination" class="pageCont col-12 mx-auto maxWidth1500">
+						<div class="marginVert10">
+							<a href="javascript:prevPage()" id="btn_prev" class="pageButtons marginVert10">Prev</a>
+							<a href="javascript:nextPage()" id="btn_next" class="pageButtons marginVert10">Next</a>
+						</div>
+						<div class="marginVert10">
+							<span>Página <span id="page"></span> de <span id="totalPages"></span></span>
 						</div>
 					</div>
-
 
 			</div>
 		</div>
