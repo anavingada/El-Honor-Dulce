@@ -32,7 +32,7 @@ const promise = fetch('./information/productosLista.txt').then(
 ).then(
     function (json) {
         objJson = json;
-        console.log(objJson);
+        //console.log(objJson);
     }
 )
 
@@ -64,13 +64,22 @@ function changePage(page) {
     listing_table.innerHTML = "";
 
     for (var i = (page - 1) * records_per_page; i < (page * records_per_page); i++) {
+       /*y = "";
+        y +=
+            '<div class="producto col-xl-3 col-lg-4 col-md-5 col-sm-6 col-11"><img src="' + objJson[i].image + '" alt="' + objJson[i].nameProd + '"><div class="marginVert10"><span class="nameProducto">' + objJson[i].nameProd + '</span></div><div class="alergenosCont marginVert10 justify-content-center">'
+        for (j in objJson[i].alergenosProd) {
+            y += '<img class="iconWidth" src="' + objJson[i].alergenosProd[j].imageAlerg + '" alt="' + objJson[i].alergenosProd[j].nameAlerg + '" data-toggle="tooltip" data-placement="top" title="' + objJson[i].alergenosProd[j].nameAlerg + '" />'
+        }
+        y += '</div><div class="precioCarrito justify-content-around"><span class="my-auto"><b>' + objJson[i].price + ' €</b> <small>/ ' + objJson[i].unidades + ' unidades</small></span><i class="fas fa-shopping-bag fa-lg my-auto addCarrito" data-toggle="tooltip" data-placement="top" title="Añadir al carrito"></i> </div></div>';*/
+        
         y = "";
         y +=
             '<div class="producto col-xl-3 col-lg-4 col-md-5 col-sm-6 col-11"><img src="' + objJson[i].image + '" alt="' + objJson[i].nameProd + '"><div class="marginVert10"><span class="nameProducto">' + objJson[i].nameProd + '</span></div><div class="alergenosCont marginVert10 justify-content-center">'
         for (j in objJson[i].alergenosProd) {
             y += '<img class="iconWidth" src="' + objJson[i].alergenosProd[j].imageAlerg + '" alt="' + objJson[i].alergenosProd[j].nameAlerg + '" data-toggle="tooltip" data-placement="top" title="' + objJson[i].alergenosProd[j].nameAlerg + '" />'
         }
-        y += '</div><div class="precioCarrito justify-content-around"><span class="my-auto"><b>' + objJson[i].price + ' €</b> <small>/ ' + objJson[i].unidades + ' unidades</small></span><i class="fas fa-shopping-bag fa-lg my-auto addCarrito" data-toggle="tooltip" data-placement="top" title="Añadir al carrito"></i> </div></div>';
+        y += '</div><div class="precioCarrito justify-content-around"><span class="my-auto"><b>' + objJson[i].price + ' €</b> <small>/ ' + objJson[i].unidades + ' unidades</small></span><a type="button" onclick="addToCart(this)" data-id="' + objJson[i].ID + '" data-name="' + objJson[i].nameProd + '" data-price="' + objJson[i].price + '" class="add-to-cart"><i class="fas fa-shopping-bag fa-lg my-auto addCarrito" data-toggle="tooltip" data-placement="top" title="Añadir al carrito"></i></a> </div></div>';
+        
 
         listing_table.innerHTML += y;
     };
@@ -97,9 +106,10 @@ function numPages() {
 
 window.onload = async () => {
     let objJson = await promise;
-    console.log("onload");
+    // console.log("onload");
     changePage(1);
 };
+
 
 /*
 <div class="producto col-xl-3 col-lg-4 col-md-5 col-sm-6 col-11" >
@@ -117,4 +127,5 @@ window.onload = async () => {
          <i class="fas fa-shopping-bag fa-lg my-auto addCarrito" data-toggle="tooltip" data-placement="top" title="Añadir al carrito"></i>
     </div>
 </div>
-*/
+*/ 
+

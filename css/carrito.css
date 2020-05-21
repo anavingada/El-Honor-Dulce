@@ -1,0 +1,86 @@
+
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Carrito */
+
+.marginVert20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+	text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #d15a43;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center !important;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+.styleInput {
+    border: 1px solid #d15a43;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.col1 {
+    width: 40%;
+}
+
+.col2, .col4 {
+    width: 10%;
+}
+
+.col3, .col5, .col6 {
+    width: 5%;
+}
+
+.col7 {
+    width: 25%;
+}
+
+#menosUnidades, #masUnidades, #eliminarProd {
+    border: 1px solid #d15a43;
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.displayButtons {
+    display: flex;
+}
+
+#vaciarCarrito, #continuarComprando, #finalizarEncomienda {
+    border: 1px solid #d15a43;
+    background-color: #e7cca6;
+    color: #432e2f;
+}
+
+#vaciarCarrito:hover, #continuarComprando:hover, #finalizarEncomienda:hover {
+    background-color: #d15a43;
+}
+
+@media only screen and (min-width: 1600px) {
+    .maxWidth1500 {
+        max-width: 1500px !important;
+    }
+}
+
+@media only screen and (max-width: 259px) {
+    .noPadding {
+        padding: 0 !important;
+    }
+}
+
+

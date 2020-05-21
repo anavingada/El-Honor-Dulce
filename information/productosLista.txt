@@ -10,7 +10,7 @@
             { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
             { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
         ],
-        "price" : "5,50",
+        "price" : "5.50",
         "unidades" : "10"
     },
     {
@@ -61,7 +61,7 @@
             { "nameAlerg":"Lácteos", "imageAlerg":"images/lacteos.png" },
             { "nameAlerg":"Huevos", "imageAlerg":"images/huevo.png" }
         ],
-        "price" : "4,50",
+        "price" : "4.50",
         "unidades" : "10"
     },
     {
