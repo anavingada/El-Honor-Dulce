@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Cookies */
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+	color: #fff;
+    z-index: 999;
+}
+
+.pop_container {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e7cca6;
+}
+
+.marginVert20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#imgCookies {
+    max-width: 100%;
+}
+
+.bannerText {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #432e2f;
+}
+
+.bannerText a {
+    color: #432e2f;
+    text-decoration: underline;
+}
+
+.bannerText a:hover {
+    color: #d15a43;
+    text-decoration: underline;
+}
+
+.popCloseCont {
+    border: 1px solid #432e2f;
+    background-color: #432e2f;
+    padding: 10px;
+    text-align: center;
+}
+
+.popClose {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: #d15a43;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 1600px) {
+    .maxWidth700 {
+        max-width: 700px !important;
+    }
+}
+
+@media only screen and (max-width: 189px) {
+    .pop_container {
+        position: unset;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        word-break: break-all;
+    }
+}

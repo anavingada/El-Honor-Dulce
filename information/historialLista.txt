@@ -1,0 +1,20 @@
+[
+    {
+        "ID" : "001",
+        "date" : "05/01/2020", 
+        "productos" : ["Cookies con pepitas de chocolate", "Crema Catalana"],
+        "precioTotal" : "13.5"
+    },
+    {
+        "ID" : "002",
+        "date" : "12/02/2020", 
+        "productos" : ["Bolas de Berlim"],
+        "precioTotal" : "1"
+    },
+    {
+        "ID" : "003",
+        "date" : "23/04/2020", 
+        "productos" : ["Bizcocho de chocolate", "Bizcocho de Canela", "Quesada"],
+        "precioTotal" : "23"
+    }
+]

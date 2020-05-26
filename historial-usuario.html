@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-	<title>Carrito - El Horno Dulce</title>
+	<title>Historial - El Horno Dulce</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/cookies.css">
-	<link rel="stylesheet" type="text/css" href="css/carrito.css">
+	<link rel="stylesheet" type="text/css" href="css/historial-usuario.css">
 
 	<!-- Bootstrap CSS & Javascript -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -66,9 +66,6 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-
-
-
 </head>
 
 <body style="overflow-x: hidden; position: relative;">
@@ -79,31 +76,11 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container-fluid">
-                <h1 class="col-12 col-xl-8 mx-auto">Tu Carrito</h1>
-                <div id="productosCont" class="col-md-11 col-lg-12 mx-auto maxWidth1500">
-					<table class="show-cart col-12 mx-auto table-striped">
-						
-					</table>
-
+				<h1 class="col-xl-8 mx-auto">Tu historial de Encomiendas</h1>
+				<div class="col-12 col-md-11 col-lg-11 col-xl-8 mx-auto" id="accordion">
 					
-
-                    <div id="total" class="marginVert20 d-flex justify-content-end">
-                        <span><b>Total a pagar: <span class="total-cart"></span> €</b></span>
-                    </div>
-                </div>
-                <div id="encomiendaButtons" class="col-12 mx-auto maxWidth1500 displayButtons marginVert20 noPadding justify-content-center">
-					<div class="col-12 col-md-4 marginVert20 noPadding text-center">
-						<button id="vaciarCarrito" type="button" class="clear-cart btn btn-default mx-auto col-12 col-sm-8 col-md-10" >Vaciar carrito</button>
-                    </div>
-					<div class="col-12 col-md-4 marginVert20 noPadding text-center">
-                        <a id="continuarComprando" type="button" class="btn btn-default mx-auto col-12 col-sm-8 col-md-10" href="productos.html" >Continuar comprando</a>
-                    </div>
-                    <div class="col-12 col-md-4 marginVert20 noPadding text-center">
-                        <a id="finalizarEncomienda" type="button" class="btn btn-default mx-auto col-12 col-sm-8 col-md-10" onclick="finalizarEncomienda()">Finalizar encomienda</a>
-                    </div>
 				</div>
-				<div id="mensaje"></div>
-			</div>
+            </div>
 		</div>
 	</div>
 
@@ -111,8 +88,9 @@
 	<div id="footer"></div>
 	<!--/Footer-->
 
+
 	<!-- External Javascript -->
-	<script type="text/javascript" src="javascript/carrito.js"></script>
+	<script type="text/javascript" src="javascript/historial-usuario.js"></script>
 	<script type="text/javascript" src="javascript/cookies.js"></script>
 
 </body>

@@ -1,16 +1,13 @@
 var x = "";
 var y = "";
 var i;
-var hash = 1;
 fetch('./information/faqsLista.txt')
   .then(res => res.json())
   .then(data => {
     for (i in data) {
-      console.log('hash-->' + hash);
-      y += '<div class="card faq"><div class="card-header headFaq"><div class="mb-0"><button class="btn btn-link question collapsed" data-toggle="collapse" data-target="#id' + hash + '" aria-expanded="false" aria-controls="">' + data[i].question + '</button></div></div><div id="id' + hash + '" class="collapse" aria-labelledby="" data-parent="#accordion"><div class="card-body answer">' + data[i].answer + '</div></div></div>';
-      hash++;
+      y += '<div class="card faq"><div class="card-header headFaq"><div class="mb-0"><button class="btn btn-link question collapsed" data-toggle="collapse" data-target="#ID' + data[i].ID + '" aria-expanded="false" aria-controls="">' + data[i].question + '</button></div></div><div id="ID' + data[i].ID + '" class="collapse" aria-labelledby="" data-parent="#accordion"><div class="card-body answer">' + data[i].answer + '</div></div></div>';
     }
-    document.getElementById("accordion").innerHTML = y;
+    document.getElementById("accordion").innerHTML += y;
     console.log(data)
 
   })

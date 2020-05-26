@@ -205,7 +205,7 @@ function displayCart() {
             + "<td>" + cartArray[i].total + "</td>"
             + "</tr>";*/
 
-            output += "<tr>"
+            output += "<tr class='lineMobile'>"
                             + "<td class='col1'>" + cartArray[i].name + "</td>"
                             + "<td class='col2'>" + cartArray[i].price + " €</td>"
                             + "<td class='col3'><button id='menosUnidades' class='minus-item input-group-addon my-auto' data-id='" + cartArray[i].id + "' data-name='" + cartArray[i].name + "'><i class='fas fa-minus'></i></button></td>"
@@ -258,6 +258,7 @@ displayCart();
 
 function finalizarEncomienda() {
     // if user is logged-in
+    shoppingCart.clearCart();
     document.getElementById("productosCont").style.display = "none";
     document.getElementById("encomiendaButtons").style.display = "none";
     document.getElementById("mensaje").innerHTML += '<p id="todoCorrecto">Muchas gracias. Tu encomienda se ha realizado correctamente.</p>';
@@ -265,6 +266,7 @@ function finalizarEncomienda() {
     console.log("Mandar datos para la base de datos de encomiendas. Encomienda finalizada.");
 
     // if user is not logged-in
+    // no borrar carrito
     document.getElementById("mensaje").innerHTML += 'Si el usuario no está logged in, redireccionar el usuario para la página de login';
 }
 

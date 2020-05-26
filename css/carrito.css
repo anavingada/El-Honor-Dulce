@@ -77,15 +77,69 @@ th, td {
     }
 }
 
-@media only screen and (max-width: 767x) {
+@media only screen and (max-width: 767px) {
+    td {
+        font-size: 15px;
+    }
     .displayButtons {
+        display: block;
+    }
+    #vaciarCarrito, #continuarComprando, #finalizarEncomienda {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 679px) {
+    .col2, .col7, thead {
+        display: none;
+    }
+    .lineMobile {
+        width: 100%;
+        display: block;
+    }
+    .col1 {
+        width: 100%;
         display: block;
     }
 }
 
-@media only screen and (max-width: 679x) {
-    .col2, .col7, thead {
-        display: none;
+@media only screen and (max-width: 479px) {
+    #menosUnidades, #masUnidades, #eliminarProd {
+        margin: 0;
+    }
+    .col3, .col5, .col6 {
+        width: 1%;
+    }    
+}
+
+@media only screen and (max-width: 369px) {
+    td {
+        padding-left: 5px;
+        padding-right: 5px;
+    }   
+    .styleInput {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 269px) {
+    #productosCont {
+        padding: 0 !important;
+    }
+    .col3 {
+        width: 30%;
+        display: inline-grid;
+        margin: auto 5% auto 10%;
+    }
+    .col4 {
+        width: 45%;
+        display: inline-grid;
+        margin: auto 5% auto 0;
+    }
+    .col5, .col6 {
+        width: 30%;
+        display: inline-grid;
+        margin: auto 10% auto 10%;
     }
 }
 
@@ -95,4 +149,26 @@ th, td {
     }
 }
 
+@media only screen and (max-width: 179px) {
+    h1 {
+        word-break: break-all;
+    }
+    .col3, .col4, .col5, .col6 {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 139px) {
+    #vaciarCarrito, #continuarComprando, #finalizarEncomienda {
+        word-break: break-all;
+    }
+}
+
+@media only screen and (max-width: 119px) {
+    .col1 {
+        word-break: break-all;
+    }
+}
 
